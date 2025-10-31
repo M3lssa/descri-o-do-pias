@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+header{
+    background-color: rgb(253, 255, 153);
+}
+
+#primeiroa{
+    background-color: rgb(255, 149, 246);
+    height: 200px;
+    padding-top: 20px;
+}
+
+#segundoa{
+    background-color: rgb(214, 127, 255);
+    height: 200px;
+    padding-top: 20px;
+}
+
+#segundob{
+    background-color: rgb(135, 163, 255);
+    height: 200px;
+    padding-top: 20px;
+}
+
+#terceiroc{
+    background-color: rgb(127, 255, 249);
+    height: 200px;
+    padding-top: 20px;
+}
+
+#terceirod{
+    background-color: rgb(158, 255, 149);
+    height: 200px;
+    padding-top: 20px;
+}
+
+.logotipo{
+    height: 200px;
+}
+
+.menu{
+    background-color: rgb(255, 245, 112);
+    padding: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    transition: 0.3;
+    padding: 5px;
+}
+
+.menu a:hover{
+    color: blue;
+    text-decoration: underline;
+    background-color: brown;
+    border-radius: 3px;
+}
+
+.menu li{
+    display: inline;
+    padding: 15px;
+}
