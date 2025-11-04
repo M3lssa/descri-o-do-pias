@@ -8,35 +8,35 @@ body{
 }
 
 header{
-    background-color: rgb(253, 255, 153);
+    background-color: rgb(222, 222, 255);
 }
 
 #primeiroa{
-    background-color: rgb(255, 149, 246);
+    background-color: rgb(183, 183, 252);
     height: 200px;
     padding-top: 20px;
 }
 
 #segundoa{
-    background-color: rgb(214, 127, 255);
+    background-color: rgb(148, 148, 255);
     height: 200px;
     padding-top: 20px;
 }
 
 #segundob{
-    background-color: rgb(135, 163, 255);
+    background-color: rgb(117, 117, 255);
     height: 200px;
     padding-top: 20px;
 }
 
 #terceiroc{
-    background-color: rgb(127, 255, 249);
+    background-color: rgb(99, 99, 216);
     height: 200px;
     padding-top: 20px;
 }
 
 #terceirod{
-    background-color: rgb(158, 255, 149);
+    background-color: rgb(79, 79, 187);
     height: 200px;
     padding-top: 20px;
 }
@@ -46,7 +46,7 @@ header{
 }
 
 .menu{
-    background-color: rgb(255, 245, 112);
+    background-color: blue;
     padding: 15px;
 }
 
@@ -55,7 +55,7 @@ header{
     font-size: large;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: blueviolet;
+    color: rgb(95, 151, 230);
     transition: 0.3;
     padding: 5px;
 }
@@ -70,4 +70,21 @@ header{
 .menu li{
     display: inline;
     padding: 15px;
+}
+
+.texto_1{
+    background-color: rgb(161, 161, 255);
+    margin: 0 50px 0 50px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.texto_1:hover{
+    background-color: rgb(42, 120, 165);
+}
+
+.texto_1 p{
+    /* border: solid rgb(243, 161, 161) 2px; */
+    text-align: center;
 }
