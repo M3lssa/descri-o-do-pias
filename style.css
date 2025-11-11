@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+header{
+    background-color: rgb(222, 222, 255);
+}
+
+#pias{
+    background-color: blueviolet;
+    height: 100px;
+    padding: 20px;
+}
+
+#primeiroa{
+    background-color: rgb(183, 183, 252);
+    height: 200px;
+    padding-top: 20px;
+}
+
+#segundoa{
+    background-color: rgb(148, 148, 255);
+    height: 230px;
+    padding-top: 20px;
+}
+
+#segundob{
+    background-color: rgb(117, 117, 255);
+    height: 250px;
+    padding-top: 20px;
+}
+
+#terceiroc{
+    background-color: rgb(99, 99, 216);
+    height: 200px;
+    padding-top: 20px;
+}
+
+#terceirod{
+    background-color: rgb(79, 79, 187);
+    height: 200px;
+    padding-top: 20px;
+}
+
+.logotipo{
+    height: 200px;
+}
+
+.menu{
+    background-color: rgb(142, 142, 243);
+    padding: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 105, 252);
+    transition: 0.3;
+    padding: 5px;
+}
+
+.menu a:hover{
+    color: rgb(131, 252, 115);
+    text-decoration: underline;
+    background-color: rgb(119, 0, 255);
+    border-radius: 3px;
+}
+
+.menu li{
+    display: inline;
+    padding: 15px;
+}
+
+.texto_1{
+    background-color: rgb(161, 161, 255);
+    margin: 0 50px 0 50px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.texto_1:hover{
+    background-color: rgb(42, 120, 165);
+}
+
+.texto_1 p{
+    /* border: solid rgb(243, 161, 161) 2px; */
+    text-align: center;
+}
+
+.imgprimeiroa{
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+}
+
+.imgsegundoa{
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+}
+
+.imgsegundob{
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+}
+
+.imgterceiroc{
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+}
+
+.imgterceirod{
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+}
+
+footer{
+    background-color: blueviolet;
+}
