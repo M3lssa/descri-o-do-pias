@@ -101,10 +101,22 @@ header{
     float: left;
 }
 
+.sistema{
+    width: 140px;
+    margin-right: 10px;
+    float: right;
+}
+
 .imgsegundoa{
     width: 120px;
     margin-right: 10px;
     float: left;
+}
+
+.divulgação{
+    width: 150px;
+    margin-right: 10px;
+    float: right;
 }
 
 .imgsegundob{
@@ -113,16 +125,34 @@ header{
     float: left;
 }
 
+.cliente{
+    width: 180px;
+    margin-right: 10px;
+    float: right;
+}
+
 .imgterceiroc{
     width: 120px;
     margin-right: 10px;
     float: left;
 }
 
+.desenvolvimento{
+    width: 140px;
+    margin-right: 10px;
+    float: right;
+}
+
 .imgterceirod{
     width: 120px;
     margin-right: 10px;
     float: left;
+}
+
+.plano{
+    width: 180px;
+    margin-right: 10px;
+    float: right;
 }
 
 footer{
