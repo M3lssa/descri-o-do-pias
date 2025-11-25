@@ -8,6 +8,7 @@ body{
 }
 
 header{
+    height: 200px;
     background-color: rgb(222, 222, 255);
 }
 
@@ -49,6 +50,28 @@ header{
 
 .logotipo{
     height: 200px;
+    float: left;
+}
+
+.parana{
+    height: 180px;
+    float: right;
+}
+#pp {
+    color: red;
+    font-size: 10cap;
+}
+#ii {
+    color: green;
+    font-size: 10cap;
+}
+#aa {
+    color: blue;
+    font-size: 10cap;
+}
+#ss {
+    color: rgb(255, 187, 0);
+    font-size: 10cap;
 }
 
 .menu{
