@@ -33,18 +33,16 @@ header {
     padding: 0 20px;
 }
 
-/* --- LOGOS COM FUNDO BRANCO (Ajuste solicitado) --- */
+/* LOGOS COM FUNDO BRANCO */
 .logotipo, .parana {
     height: 100px;
     object-fit: contain;
-    
     background-color: white; /* Fundo branco para destaque */
-    padding: 8px; /* Espaço interno para a imagem "respirar" */
+    padding: 8px; /* Espaço interno */
     border-radius: 12px; /* Cantos arredondados */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Título Central */
 .titulo-principal {
     text-align: center;
 }
@@ -58,10 +56,10 @@ header {
 }
 
 /* Cores das letras do título */
-#pp { color: #ff6b6b; } /* Vermelho suave */
-#ii { color: #51cf66; } /* Verde suave */
-#aa { color: #4dabf7; } /* Azul suave */
-#ss { color: #fcc419; } /* Amarelo ouro */
+#pp { color: #ff6b6b; }
+#ii { color: #51cf66; }
+#aa { color: #4dabf7; }
+#ss { color: #fcc419; }
 
 .subtitulo {
     font-size: 1.1rem;
@@ -83,6 +81,9 @@ header {
 .menu ul {
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite ajustar em telas menores */
 }
 
 .menu li {
@@ -100,7 +101,7 @@ header {
 }
 
 .menu a:hover {
-    background-color: #00509e; /* Azul mais claro no hover */
+    background-color: #00509e;
     color: #fcc419; /* Texto amarelo no hover */
 }
 
@@ -113,20 +114,82 @@ header {
     padding: 20px;
 }
 
-/* Seção de Introdução */
+/* =========================================
+   SEÇÃO "QUADRO BONITO" (SOBRE O PROJETO)
+   ========================================= */
 .intro-section {
-    background-color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-bottom: 30px;
-    border-radius: 0 0 15px 15px; /* Arredonda só em baixo */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 30px 20px;
+    background-color: transparent;
 }
 
-.intro-section h1 {
+/* O "Quadro" em si */
+.quadro-texto {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #003366; /* Detalhe azul lateral */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.quadro-texto h1 {
     color: #003366;
-    margin-bottom: 15px;
     font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.texto-destaque {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.quadro-texto p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Lista estilizada do quadro */
+.lista-projetos {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.lista-projetos li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 3px solid #fcc419; /* Detalhe amarelo */
+}
+
+.lista-projetos strong {
+    color: #003366;
+    font-size: 1.05rem;
+}
+
+/* Frase final do quadro */
+.frase-final {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    color: #00509e;
+    font-weight: bold;
+}
+
+.frase-final em {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #003366;
+    font-style: italic;
 }
 
 /* =========================================
@@ -136,19 +199,18 @@ header {
     background-color: white;
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Sombra elegante */
-    display: flex; /* Alinha imagem e texto lado a lado */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
     align-items: center;
     padding: 25px;
     transition: transform 0.2s;
-    border-left: 5px solid #00509e; /* Detalhe colorido na lateral */
+    border-left: 5px solid #00509e;
 }
 
 .card-turma:hover {
-    transform: translateY(-5px); /* Efeito de elevação ao passar mouse */
+    transform: translateY(-5px);
 }
 
-/* Imagens dentro dos cards */
 .imagens-turma {
     flex: 1;
     display: flex;
@@ -160,12 +222,11 @@ header {
 .imagens-turma img {
     width: 120px;
     height: 120px;
-    object-fit: cover; /* Corta a imagem para preencher o quadrado */
+    object-fit: cover;
     border-radius: 8px;
     border: 2px solid #eee;
 }
 
-/* Texto dentro dos cards */
 .texto-turma {
     flex: 2;
     padding-left: 30px;
@@ -216,31 +277,63 @@ footer p {
 }
 
 /* =========================================
-   RESPONSIVIDADE (CELULAR)
+   RESPONSIVIDADE (CORREÇÃO MOBILE)
    ========================================= */
 @media (max-width: 768px) {
+    /* Header ajustado */
     .header-content {
         flex-direction: column;
         gap: 15px;
     }
     
+    /* MENU OTIMIZADO PARA CELULAR */
+    .menu {
+        position: relative; /* Solta o menu para não cobrir a tela */
+    }
+
+    .menu ul {
+        justify-content: center;
+        flex-wrap: wrap; /* Botões lado a lado */
+    }
+
+    .menu li {
+        display: inline-block;
+        width: auto; /* Tamanho automático */
+    }
+
+    .menu a {
+        padding: 10px 12px; /* Botões menores */
+        font-size: 0.9rem; /* Letra menor */
+        margin: 2px; /* Espacinho entre eles */
+        border-radius: 4px;
+    }
+    
+    /* Quadro Texto ajustado */
+    .quadro-texto {
+        padding: 20px;
+    }
+    .quadro-texto h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Cards ajustados */
     .card-turma {
-        flex-direction: column; /* Empilha: imagem em cima, texto embaixo */
+        flex-direction: column;
         text-align: center;
+        padding: 15px;
+    }
+
+    .imagens-turma {
+        min-width: auto;
+        margin-bottom: 15px;
     }
 
     .texto-turma {
         padding-left: 0;
-        padding-top: 20px;
         text-align: center;
     }
     
     .texto-turma p {
-        text-align: left; /* Mantém o texto alinhado à esquerda para leitura */
-    }
-    
-    .menu li {
-        display: block; /* Menu vertical no celular */
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        text-align: left;
     }
 }
